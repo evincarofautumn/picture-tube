@@ -3,6 +3,7 @@ var argv = require('optimist')
     .usage('Usage: picture-tube OPTIONS { file or uri }')
     .demand(1)
     .describe('cols', 'number of columns to use for output')
+    .describe('char', 'character to use for rendering pixels')
     .argv
 ;
 var tube = require('../')(argv);
